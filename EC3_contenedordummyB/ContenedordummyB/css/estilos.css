@@ -1,0 +1,54 @@
+.body{
+    background: #e5e5e5;
+    margin: auto 0;
+}
+
+h1,h6{
+    text-align: center;
+}
+
+.main{
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    padding: 40px;
+}
+
+.formulario{
+    width: 80%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.form_label{
+    display: block;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.form_input{
+    width: 100%;
+    background: rgb(245,240,240);
+    border: 6px solid transparent;
+    border-radius: 6px;
+    height: 45px;
+}
+
+.form_btn{
+    width: 100%;
+    background: black;
+    height: 45px;
+    border-radius: 6px;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form_label_s{
+     display: inline;
+     font-weight: 700;
+     padding: 10px;
+     cursor:pointer;
+
+}

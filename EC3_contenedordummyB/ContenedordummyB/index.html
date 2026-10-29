@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css">
+</head>
+
+<body class="body bg-light">
+    <header class="header container mt-4">
+        <h1 class="text-center">Formulario de Registro</h1>
+    </header>
+    <main class="main container my-4">
+        <div class="formulario card shadow p-4">
+            <form name="frm" id="frm" method="POST" action="php/alta.php" onsubmit="return false;">
+                
+                <!-- Nombre -->
+                <div class="form-group">
+                    <label for="nombre" class="form_label">Nombre:</label>
+                    <input type="text" name="nombre" id="nombre" class="form-control form_input"
+                        onchange="frm.nombre.value=frm.nombre.value.toUpperCase()">
+                    <div class="alert alert-danger mt-2" style="display: none;" id="nom">Ingresa tu nombre de forma correcta (Solo letras, máx. 40 caracteres).</div>
+                </div>
+
+                <!-- Apellido -->
+                <div class="form-group">
+                    <label for="apellido" class="form_label">Apellido:</label>
+                    <input type="text" name="apellido" id="apellido" class="form-control form_input"
+                        onchange="frm.apellido.value=frm.apellido.value.toUpperCase()">
+                    <div class="alert alert-danger mt-2" style="display: none;" id="nom2">Ingresa tus apellidos de forma correcta (Solo letras, máx. 40 caracteres).</div>
+                </div>
+
+                <!-- Dirección -->
+                <div class="form-group">
+                    <label for="direccion" class="form_label">Dirección:</label>
+                    <input type="text" name="direccion" id="direccion" class="form-control form_input"
+                        onchange="frm.direccion.value=frm.direccion.value.toUpperCase()">
+                    <div class="alert alert-danger mt-2" style="display: none;" id="nom3">Ingresa tu dirección de forma correcta (Alfanumérica, máx. 40 caracteres).</div>
+                </div>
+
+                <!-- Teléfono -->
+                <div class="form-group">
+                    <label for="telefono" class="form_label">Teléfono:</label>
+                    <input type="text" name="telefono" id="telefono" maxlength="14" class="form-control form_input" onkeypress="
+                        if(event.keyCode<48 || event.keyCode >57){
+                            event.returnValue=false;
+                        }">
+                    <div class="alert alert-danger mt-2" style="display: none;" id="nom4">Ingresa tu teléfono de forma correcta (Entre 7 y 14 dígitos numéricos).</div>
+                </div>
+
+                <!-- E-mail -->
+                <div class="form-group">
+                    <label for="email" class="form_label">E-mail:</label>
+                    <input type="text" name="email" id="email" class="form-control form_input">
+                    <div class="alert alert-danger mt-2" style="display: none;" id="nom5">Ingresa tu correo electrónico de forma correcta.</div>
+                </div>
+
+                <!-- Género -->
+                <div class="form-group">
+                    <label class="form_label">Género:</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="generoM" value="Mujer">
+                        <label class="form-check-label" for="generoM">Mujer</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="generoH" value="Hombre">
+                        <label class="form-check-label" for="generoH">Hombre</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="genero" id="generoO" value="Otro">
+                        <label class="form-check-label" for="generoO">Otro</label>
+                    </div>
+                    <div class="alert alert-danger mt-2" style="display: none;" id="nom6">Selecciona tu género.</div>
+                </div>
+
+                <!-- Pregunta Comentarios -->
+                <div class="form-group">
+                    <label class="form_label">¿Deseas hacer un comentario?</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="comentarioOp" id="opSi" value="si" onclick="toggleComentarios(true)">
+                        <label class="form-check-label" for="opSi">Sí</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="comentarioOp" id="opNo" value="no" onclick="toggleComentarios(false)">
+                        <label class="form-check-label" for="opNo">No</label>
+                    </div>
+                </div>
+
+                <!-- Textarea Comentarios (Oculto por defecto) -->
+                <div class="form-group" id="contenedorComentarios" style="display: none;">
+                    <label for="comentarios" class="form_label">Comentarios:</label>
+                    <textarea name="comentarios" id="comentarios" class="form-control form_input" rows="3"></textarea>
+                    <div class="alert alert-danger mt-2" style="display: none;" id="nom8">El comentario debe tener entre 20 y 128 caracteres.</div>
+                </div>
+
+                <br>
+                <div class="form-group">
+                    <input type="button" value="Enviar Datos" class="btn btn-dark form_btn" onclick="validacion();">
+                    <div class="alert alert-success mt-3" style="display: none;" id="nom7">Datos enviados correctamente</div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer class="footer text-center py-3">
+        <h6>Derechos registrados @</h6>
+    </footer>
+</body>
+<script src="js/validaciones.js"></script>
+
+</html>

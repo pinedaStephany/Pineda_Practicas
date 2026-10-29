@@ -1,0 +1,40 @@
+1.- Abre el archivo doscss.html
+
+2.- Dentro de la Etiqueta  <H2 incluir,  style="color: blue; background: green;" > LA LIEBRE Y LA TORTUGA
+
+QUEDARIA ASI <H2 style="color: blue; background: green;">LA LIEBRE Y LA TORTUGA</H2>
+
+3.-En la etiqueta parrafo incluir 
+<P style="
+border-bottom: solid 3px #FFFF00;
+border-top: solid 3px #FFFF00;
+border-left: solid 3px #FFFF00;
+border-right: solid 3px #FFFF00;
+font-size: 20px;
+color: #FFFFFF;
+font-variant: small-caps;
+background-color: rgb(80,00,00);" > 
+
+3a.- En el parrafo abajo coloca un color de fondo (backgound-color:#800000) 
+
+Todos los animales estaban reun idos a lo largo del camino que orillaba 
+el bosque. Porque era el día de la gran carrera entre la liebre y la tortuga. 
+La ágil liebre se había burlado de la lenta y pesada tortuga y la había desafiado 
+a una carrera. Nadie tenía dudas acerca de quién iba a ganar, pero todos pensaban
+ que resultaría divertido observar el
+ paso de ambos competidores.</P>
+
+4.- La primera letra del parrafo enterior es la letra T situa antes de la letra citada  el siguiente codigo
+
+<SPAN STYLE="font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-weight: bold;
+font-size: 12px;
+font-color: red;
+text-transform:capitalize;">
+
+ y al final de ella. </SPAN>
+
+5.- Agrega mediante  la hoja de estilos una imagen arriba y al centro, la imagen se llama f19.jpg
+
+
+by: MTI. Daniel Tellez

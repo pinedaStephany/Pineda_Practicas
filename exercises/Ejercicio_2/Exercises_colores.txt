@@ -1,0 +1,22 @@
+1.- Abre el archivo unocss.html
+2.- En la parte superior aparece un titulo <H2>, colocar dentro de esta:
+ 
+	style="background:#5701ae; text-align: center;  color: rgb(172, 171, 170);", observa los cambios sobre las palabras 
+     Pintando el arcoíris
+3.- Busca la frase: Aqu&iacute; utilizamos la gama de
+4.- Situa la siguiente etiqueta <span style="color: Red;"> antes de:
+    colores RGB y al final </span>
+5.- En el parrafo donde aparece la palabra Colores: coloca en forma de lista
+
+<span style="color: #ed1b24">rojo</span>, 
+<span style="color: #d9cc00">amarillo</span>, 
+<span style="color: #00a3e8">azul</span>, 
+<span style="color: #a349a3">violeta</span>, 
+<span style="color: #ff7f26">naranja</span>, 
+
+antes de las 2 ultimas etiquetas <span> tanto verde como indigo
+<span style="color: #a1cc1b">Verde </span>,
+<span style="color: #5701ae">índigo</span>
+6. Cierra el parrafo </p>, guarda y observa el resultado
+
+by: MTI. Daniel Tellez

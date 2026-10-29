@@ -1,0 +1,300 @@
+/* ==========================================
+   VARIABLES Y ESTILOS GLOBALES
+   ========================================== */
+:root {
+    --color-rojo-principal: #C8102E;
+    --color-rojo-oscuro: #8B0000;
+    --color-dorado: #FFD700;
+    --color-dorado-oscuro: #C5A000;
+    --color-negro-fondo: #0A0A0A;
+    --color-negro-tarjeta: #141414;
+    --color-negro-manga: #1F1F1F;
+    --color-texto: #F5F5F5;
+    --color-texto-secundario: #CCCCCC;
+    --fuente-principal: 'Arial', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-negro-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-principal);
+    line-height: 1.6;
+}
+
+/* ==========================================
+   PATRÓN FLEXBOX 1: NAVBAR
+   ========================================== */
+.navbar-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-negro-tarjeta);
+    padding: 1rem 2rem;
+    border-bottom: 3px solid var(--color-rojo-principal);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo h1 {
+    color: var(--color-rojo-principal);
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: var(--color-texto);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--color-dorado);
+}
+
+/* ==========================================
+   PATRÓN FLEXBOX 2: HERO BANNER
+   ========================================== */
+.hero-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+    background: linear-gradient(rgba(10, 10, 10, 0.85), rgba(10, 10, 10, 0.85)),
+                url('img/ironman.jpg') center/cover no-repeat;
+    padding: 2rem;
+    border-bottom: 2px solid var(--color-dorado);
+}
+
+.hero-content {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.hero-content h2 {
+    font-size: 2.5rem;
+    color: var(--color-dorado);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    color: var(--color-texto-secundario);
+}
+
+.btn-gold {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background-color: var(--color-rojo-principal);
+    color: var(--color-dorado);
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid var(--color-dorado);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.btn-gold:hover {
+    background-color: var(--color-dorado);
+    color: var(--color-negro-fondo);
+}
+
+/* ==========================================
+   SECCIONES GENERALES
+   ========================================== */
+.section-container {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-rojo-principal);
+    margin-bottom: 2rem;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: var(--color-dorado);
+    margin: 0.5rem auto 0;
+}
+
+/* ==========================================
+   PATRÓN CSS GRID: GALERÍA DE HÉROES
+   ========================================== */
+.heroes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.hero-card {
+    background-color: var(--color-negro-tarjeta);
+    border: 2px solid var(--color-rojo-principal);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.hero-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-dorado);
+}
+
+.card-img-wrapper {
+    height: 250px;
+    overflow: hidden;
+    background-color: var(--color-rojo-oscuro);
+}
+
+.card-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: scale 0.3s ease;
+}
+
+.hero-card:hover .card-img-wrapper img {
+    scale: 1.05;
+}
+
+.card-text {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card-text h3 {
+    color: var(--color-dorado);
+    font-size: 1.3rem;
+}
+
+.card-text p {
+    color: var(--color-texto-secundario);
+    font-size: 0.95rem;
+}
+
+/* ==========================================
+   PATRÓN FLEXBOX 3: BLOQUES DE INFORMACIÓN (IMAGEN + TEXTO)
+   ========================================== */
+.info-block-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--color-negro-manga);
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border-left: 5px solid var(--color-rojo-principal);
+}
+
+.info-block-flex.reverse {
+    flex-direction: row-reverse;
+    border-left: none;
+    border-right: 5px solid var(--color-dorado);
+}
+
+.info-img-box {
+    flex: 1;
+    min-height: 250px;
+    background-color: var(--color-rojo-oscuro);
+}
+
+.info-img-box img {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    display: block;
+}
+
+.info-text-box {
+    flex: 1.5;
+    padding: 2rem;
+    background-color: var(--color-negro-tarjeta);
+}
+
+.info-text-box h3 {
+    color: var(--color-dorado);
+    font-size: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+.info-text-box p {
+    color: var(--color-texto-secundario);
+}
+
+/* ==========================================
+   PATRÓN FLEXBOX 4: FOOTER
+   ========================================== */
+.footer-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--color-negro-tarjeta);
+    padding: 2rem;
+    border-top: 2px solid var(--color-rojo-principal);
+    margin-top: 4rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links a {
+    color: var(--color-dorado);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: var(--color-rojo-principal);
+}
+
+/* ==========================================
+   RESPONSIVE DESIGN (DISEÑO ADAPTABLE)
+   ========================================== */
+@media (max-width: 768px) {
+    .navbar-flex {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .info-block-flex, .info-block-flex.reverse {
+        flex-direction: column;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+}

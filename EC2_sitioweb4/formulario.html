@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/estilos5.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <div class="top-bar">
+            <span>Lunes 27 de Septiembre de 2026</span>
+        </div>
+        <div class="header-title">
+            Sistema de Control de Ingreso a laboratorios de Electromecanica
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar"></aside>
+
+        <main>
+            <h2>Bienvenido(a):</h2>
+            <p class="user-name">Daniel Gomez Tellez</p>
+
+            <p class="instruction">
+                Te solicitamos seleccionar la materia, laboratorio y grupo, al concluir pulsa el boton enviar.
+            </p>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="carrera">Carrera:</label>
+                    <select id="carrera" name="carrera">
+                        <option value="electromecanica">Electromecanica</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="materias">Materias:</label>
+                    <select id="materias" name="materias">
+                        <option value="electronica1">Electrónica I</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="laboratorio">Laboratorio:</label>
+                    <select id="laboratorio" name="laboratorio">
+                        <option value="electronica">Electrónica</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="grupo">Grupo:</label>
+                    <select id="grupo" name="grupo">
+                        <option value="ab">ab</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <input type="button" value="Enviar consulta" class="btn-submit">
+                </div>
+            </form>
+        </main>
+    </div>
+
+    <footer></footer>
+    
+    <p><a href="index.html">Inicio</a></p>
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+header {
+    text-align: center;
+    font-family: 'Arial', 'sans-serif';
+    margin: 15px;
+    font-size: 40px;
+    color: #c8812c;
+    background-color: rgb(145, 209, 103);
+}
+
+main {
+    margin: 15px;
+    font-size: 27px;
+    font-family: 'Arial', 'sans-serif';
+    text-align: justify;
+    color: #000000;
+}
+
+main b {
+    font-size: 29px;
+    color: #000000;
+}
+
+main ol {
+    padding-left: 30px;
+    line-height: 1.9;
+}
+
+main ul,
+ul {
+    list-style: none;
+    padding-left: 60px;
+    margin: 0;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+ul li {
+    margin-bottom: 2px;
+    line-height: 1.4;
+}
+
+ul li span {
+    background-color: #025a1e;
+    padding: 1px 3px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}
+
+ul li span::before {
+    content: "";
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.img_right {
+    width: 40%;
+    float: right;
+    position: relative;
+}
+
+.text_left {
+    width: 60%;
+    float: left;
+    position: relative;
+}
+
+.img_right img {
+    width: 70%;
+    height: 270px;
+}
+
+main .holi {
+    text-align: center;
+    color: white;
+}
+
+main .holi b{
+    color: white;
+    padding: 5px 5px;
+}
+
+main mark {
+    background-color: rgb(198, 2, 2);
+}
+
+main .h mark{
+    background-color: rgb(212, 212, 212);
+}

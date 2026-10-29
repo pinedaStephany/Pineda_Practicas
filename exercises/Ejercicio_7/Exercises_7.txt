@@ -1,0 +1,25 @@
+1.- Abre el archivo indexz.html
+2.- Observa en el codigo e identifica las etiquetas <div></div> las cuales son de estructura 
+en HTML. 
+3.- Utiliza el archivo anexo en la carpeta CSS llamado estilos.css, prueba y observa el 
+comportamiento de las propiedades de las hojas de estilo.
+4.-Colocar en la primer etiqueta <div> el parametro class con el estilo Layer1 y
+en el siguiente <div> el parametro layer2.
+5.- Situa  los siguientes cuadros de divison:(Modifica las caracteristicas para que queden 
+acomodados como se muestra, deberas añadir en la hoja de estilos clases como la layer1 y layer2.
+
+A      B
+
+
+
+
+
+C      D
+
+A_rOJO
+B_AZUL
+C_AMARILLO
+D_VERDE
+
+
+by: MTI. Daniel Tellez

@@ -1,0 +1,26 @@
+body {
+    background-color: #008080;
+}
+
+h1 { 
+    text-align: center; 
+    color: #000080;
+    font-family: Arial, Verdana, sans-serif;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 2;
+}
+
+table, tr, td {
+    border: 1px double #ffA500;
+}
+
+.parrafo-impar {
+    color: #00ff00;
+}
+
+.parrafo-par {
+    color: #c0c0c0; 
+}

@@ -1,0 +1,76 @@
+body {
+    margin: 20px;
+    font-family: "Verdana", Arial, Tahoma;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #00FFFF;
+}
+
+.Layer1 {
+    padding: 10px;
+	width:554px;
+	height:80px;
+	z-index:1;
+	background-color: #006699;
+	color: #FFFFFF;
+}
+
+.Layer2 {
+    float: left;
+    padding: 10px;
+	width:113px;
+	height:313px;
+	background-color: #0000FF;
+	color: #FFFFFF;
+    margin-right: 20px
+}
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 460px; /* Ancho suficiente para 2 cuadros de 200px + márgenes */
+}
+
+.Layer3 {
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.Layer4 {
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 3px;
+    margin-bottom: 25px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.layerA {
+    background-color: #FF0000; 
+}
+
+.layerB {
+    background-color: #0000FF; 
+}
+
+.layerC {
+    background-color: #FFFF00; 
+    color: #000000;           
+    clear: left;
+}
+
+.layerD {
+    background-color: #008000; 
+}
+

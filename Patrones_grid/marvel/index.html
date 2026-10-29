@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avengers - Marvel Universe</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO CON FLEXBOX -->
+    <header class="navbar-flex">
+        <div class="logo">
+            <h1>AVENGERS</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="../../index.html"> Volver </a> 
+            <a href="#inicio">Inicio</a>
+            <a href="#heroes">Héroes</a>
+            <a href="#historia">Historia</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- BANNER PRINCIPAL (HERO) CON FLEXBOX -->
+    <section id="inicio" class="hero-flex">
+        <div class="hero-content">
+            <h2>UNIDOS PARA PROTEGER EL UNIVERSO</h2>
+            <p>Los héroes más poderosos de la Tierra se unen para luchar contra las amenazas que ningún héroe podría enfrentar solo.</p>
+            <a href="#heroes" class="btn-gold">Conocer al Equipo</a>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DE HÉROES CON CSS GRID -->
+    <section id="heroes" class="section-container">
+        <h2 class="section-title">INTEGRANTES DESTACADOS</h2>
+        
+        <div class="heroes-grid">
+            <!-- Tarjeta 1: Iron Man -->
+            <article class="hero-card">
+                <div class="card-img-wrapper">
+                    <img src="img/ironman.jpg" alt="Iron Man">
+                </div>
+                <div class="card-text">
+                    <h3>Iron Man</h3>
+                    <p>Tony Stark, genio, multimillonario, playboy y filántropo. Utiliza una armadura de alta tecnología para proteger al mundo.</p>
+                </div>
+            </article>
+
+            <!-- Tarjeta 2: Capitán América -->
+            <article class="hero-card">
+                <div class="card-img-wrapper">
+                    <img src="img/capitanamerica.jpg" alt="Capitán América">
+                </div>
+                <div class="card-text">
+                    <h3>Capitán América</h3>
+                    <p>Steve Rogers, el supersoldado de la Segunda Guerra Mundial y líder táctico del equipo de los Avengers.</p>
+                </div>
+            </article>
+
+            <!-- Tarjeta 3: Hulk -->
+            <article class="hero-card">
+                <div class="card-img-wrapper">
+                    <img src="img/hulk.jpg" alt="Hulk">
+                </div>
+                <div class="card-text">
+                    <h3>Hulk</h3>
+                    <p>El Dr. Bruce Banner se transforma en un gigante verde de fuerza inconmensurable cuando se enfurece.</p>
+                </div>
+            </article>
+
+            <!-- Tarjeta 4: Bruja Escarlata -->
+            <article class="hero-card">
+                <div class="card-img-wrapper">
+                    <img src="img/brujaescarlata.jpg" alt="Bruja Escarlata">
+                </div>
+                <div class="card-text">
+                    <h3>Bruja Escarlata</h3>
+                    <p>Wanda Maximoff posee habilidades de alteración de la realidad y manipulación de la magia del caos.</p>
+                </div>
+            </article>
+
+            <!-- Tarjeta 5: Hawkeye -->
+            <article class="hero-card">
+                <div class="card-img-wrapper">
+                    <img src="img/hawkeye.jpg" alt="Hawkeye">
+                </div>
+                <div class="card-text">
+                    <h3>Hawkeye</h3>
+                    <p>Clint Barton es el tirador definitivo, experto en arquería de precisión y combate cuerpo a cuerpo.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ESTRUCTURADA: IMAGEN Y TEXTO (REFERENCIA DEL DISEÑO) -->
+    <section id="historia" class="section-container">
+        <h2 class="section-title">ORIGEN Y MISIÓN</h2>
+        
+        <!-- Bloque Alternado FLEXBOX: Imagen en rojo, Texto en negro -->
+        <div class="info-block-flex">
+            <div class="info-img-box">
+                <img src="img/nano.jpg" alt="Tecnología Vengadores">
+            </div>
+            <div class="info-text-box">
+                <h3>LA INICIATIVA VENGADORES</h3>
+                <p>Concebida por Nick Fury, la Iniciativa Vengadores reunió a los individuos más extraordinarios del planeta. Su misión es responder cuando la Tierra enfrenta amenazas de escala cósmica e interdimensional.</p>
+            </div>
+        </div>
+
+        <div class="info-block-flex reverse">
+            <div class="info-img-box">
+                <img src="img/ironman1.jpeg" alt="Tecnología e Innovación">
+            </div>
+            <div class="info-text-box">
+                <h3>TECNOLOGÍA DE VANGUARDIA</h3>
+                <p>Desde la torre Stark hasta el equipamiento táctico de S.H.I.E.L.D., los Avengers combinan fuerza bruta, magia ancestral e innovación científica de nivel avanzado.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA CON FLEXBOX -->
+    <footer class="footer-flex">
+        <p>&copy; 2026 MARVEL / Avengers Fan Page. Todos los derechos reservados.</p>
+        <div class="footer-links">
+            <a href="#">Privacidad</a>
+            <a href="#">Términos</a>
+            <a href="#">Contacto</a>
+        </div>
+    </footer>
+
+</body>
+</html>

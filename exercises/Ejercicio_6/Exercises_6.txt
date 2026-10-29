@@ -1,0 +1,6 @@
+1.- Abre el archivo index.html
+2.- Observa en el codigo e identifica las etiquetas de parrafos, capas y tablas 
+3.- Utiliza el archivo anexo en la carpeta CSS llamado 1.css, prueba y observa el 
+comportamiento de las propiedades de las hojas de estilo.
+
+by: MTI. Daniel Tellez

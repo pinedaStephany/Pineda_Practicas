@@ -1,0 +1,12 @@
+1.- Abre el archivo unocss.html
+2.- En la parte superior aparece un titulo <H2>, colocar dentro de esta:
+ 
+	style="text-align: center;  color: blue;", observa los cambios sobre la palabra 
+      Informática.
+3.- Busca la frase:  Aqu&iacute; se aplican tus estilos
+4.- Situa la siguiente etiqueta <span style="color: Red;"> antes de:
+    tus estilos y al final </span>
+5.- Indica a tu profesor  para que sirven los tags <span></span>
+
+
+by: MTI. Daniel Tellez
